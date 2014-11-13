@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.farmfreshly.webapp</groupId>
+	<artifactId>farmfreshly-webapp</artifactId>
+	<packaging>war</packaging>
+	<name>farmfreshly-webapp Maven Webapp</name>
+
+	<parent>
+		<groupId>com.farmfreshly.parent</groupId>
+		<artifactId>farmfreshly-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../farmfreshly-parent</relativePath>
+	</parent>
+
+	<dependencies>
+        <dependency>
+            <groupId>com.farmfreshly.core</groupId>
+            <artifactId>farmfreshly-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
+ 
+
+	<build>
+		<finalName>farmfreshly</finalName>
+	</build>
+</project>
